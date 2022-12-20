@@ -6161,8 +6161,10 @@ namespace MissionPlanner.GCSViews
 
         private void cameraSwitch_Click(object sender, EventArgs e)
         {
+
             try
             {
+
                 MainV2.comPort.setDigicamControl(true);
             }
             catch (Exception ex)

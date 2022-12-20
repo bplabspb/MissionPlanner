@@ -615,8 +615,9 @@
   <data name="BUT_CameraSwitchButton.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
   </data>
-  <data name="BUT_CameraSwitchButton.Text" xml:space="preserve">
-    <value>Camera switch</value>
+  <data name="BUT_CameraSwitchButton.Text" xml:space="preserve"> 
+    <value>Camera switch
+	</value>
   </data>
   <data name="&gt;&gt;BUT_CameraSwitchButton.Name" xml:space="preserve">
     <value>BUT_CameraSwitchButton</value>

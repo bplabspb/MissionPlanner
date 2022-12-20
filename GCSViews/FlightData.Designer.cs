@@ -748,6 +748,7 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel1.Controls.Add(this.BUT_quickauto, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.BUT_setmode, 1, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            
             // 
             // BUT_CameraSwitchButton
             // 
