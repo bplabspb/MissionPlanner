@@ -6158,5 +6158,18 @@ namespace MissionPlanner.GCSViews
             tabControlactions.Multiline = !tabControlactions.Multiline;
             Settings.Instance["tabControlactions_Multiline"] = tabControlactions.Multiline.ToString();
         }
+
+        private void cameraSwitch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MainV2.comPort.setDigicamControl(true);
+            }
+            catch (Exception ex)
+            {
+                CustomMessageBox.Show("Invalid command "+ ex.Message);
+              //  return true;
+            }
+        }
     }
 }
