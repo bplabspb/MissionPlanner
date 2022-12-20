@@ -48,7 +48,6 @@ namespace MissionPlanner.GCSViews
             this.quickView1 = new MissionPlanner.Controls.QuickView();
             this.tabActions = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.BUT_CameraSwitchButton = new MissionPlanner.Controls.MyButton();
             this.BUT_SendMSG = new MissionPlanner.Controls.MyButton();
             this.BUT_abortland = new MissionPlanner.Controls.MyButton();
             this.modifyandSetLoiterRad = new MissionPlanner.Controls.ModifyandSet();
@@ -431,7 +430,6 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripHud
             // 
-            this.contextMenuStripHud.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripHud.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.videoToolStripMenuItem,
             this.setAspectRatioToolStripMenuItem,
@@ -571,7 +569,6 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripactionstab
             // 
-            this.contextMenuStripactionstab.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripactionstab.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.customizeToolStripMenuItem,
             this.multiLineToolStripMenuItem});
@@ -624,7 +621,6 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripQuickView
             // 
-            this.contextMenuStripQuickView.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripQuickView.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.setViewCountToolStripMenuItem,
             this.undockToolStripMenuItem});
@@ -723,7 +719,6 @@ namespace MissionPlanner.GCSViews
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.BUT_CameraSwitchButton, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.BUT_SendMSG, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.BUT_abortland, 4, 4);
             this.tableLayoutPanel1.Controls.Add(this.modifyandSetLoiterRad, 4, 2);
@@ -748,16 +743,6 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel1.Controls.Add(this.BUT_quickauto, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.BUT_setmode, 1, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // BUT_CameraSwitchButton
-            // 
-            this.BUT_CameraSwitchButton.ColorMouseDown = System.Drawing.Color.Empty;
-            this.BUT_CameraSwitchButton.ColorMouseOver = System.Drawing.Color.Empty;
-            this.BUT_CameraSwitchButton.ColorNotEnabled = System.Drawing.Color.Empty;
-            resources.ApplyResources(this.BUT_CameraSwitchButton, "BUT_CameraSwitchButton");
-            this.BUT_CameraSwitchButton.Name = "BUT_CameraSwitchButton";
-            this.BUT_CameraSwitchButton.UseVisualStyleBackColor = true;
-            this.BUT_CameraSwitchButton.Click += new System.EventHandler(this.cameraSwitch_Click);
             // 
             // BUT_SendMSG
             // 
@@ -2389,7 +2374,6 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripMap
             // 
-            this.contextMenuStripMap.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripMap.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.goHereToolStripMenuItem,
             this.flyToHereAltToolStripMenuItem,
@@ -2538,7 +2522,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 360D;
+            this.windDir1.Direction = 180D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -3038,6 +3022,5 @@ namespace MissionPlanner.GCSViews
         private Controls.AuxOptions auxOptions5;
         private Controls.AuxOptions auxOptions6;
         private Controls.AuxOptions auxOptions7;
-        private Controls.MyButton BUT_CameraSwitchButton;
     }
 }
